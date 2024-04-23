@@ -1,7 +1,7 @@
 '''
 Author: Brenan Palazzolo
 Date: 4 - 16 - 24
-Assignment: RPG Project 002
+Assignment: RPG Project 002 - Escape to Brenlandia
 Course: CPSC 1050 
 Section: 001
 Description: This code takes user input to play a space exploration game that will bring humans to their new planet.
