@@ -15,14 +15,15 @@ from planets import ExitNotFoundError # imports the ExitNotFoundError class from
 from planets import Planet # imports the Planet class from planets
 from alien import Aliens # imports the Alien function from alien
 
-class PlayRiddle: # adds the riddle to the game and inherits from the RiddleReader class in the read_riddles module
+class PlayRiddle(RiddleReader): # adds the riddle to the game and inherits from the RiddleReader class in the read_riddles module
 
     def __init__(self, current_planet, file_path): # initializes the parameters of the class
         self.reader = RiddleReader(file_path)
         self.current_planet = current_planet
-        self.riddle = self.reader.read_riddles_from_csv()
+        self.riddle = self.reader.read_riddles_from_csv() # inherited part of the function
 
     def handle_riddle(self, num):  # function that handles the riddles from the RiddleReader class
+
         if self.current_planet.get_name() not in ['Brenlandia', 'Earth']:  # if the current planet is not the starting planet or last planet
             print('You must now answer this riddle so we can keep traveling!')
             attempts = 2  # attempts per riddle
@@ -43,7 +44,7 @@ class PlayRiddle: # adds the riddle to the game and inherits from the RiddleRead
                     num += 1  # move to the next riddle
                     break
                 elif attempts == 1:  # if they used their attempts, this will print
-                    print('\nAh! You must be an Alien!! Abort mission! Game Over.')
+                    self.AlienInvasion()
                     exit(1)
                 else:  # if they get it wrong the first time, the hint will print out
                     print("\nIncorrect. Here's a hint: ", self.riddle['hint'][num])
