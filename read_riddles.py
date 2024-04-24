@@ -17,7 +17,7 @@ class RiddleReader: # class the reads the data from the input_file
     def __call__(self): # allows the call of read_riddles from_csv to happen
         return self.read_riddles_from_csv()
 
-    def AlienInvasion(self):
+    def AlienInvasion(self): # statement that prints in the PlayRiddle class in brenlandia
         print('\nAh! You must be an Alien!! Abort mission! Game Over.')
 
     def read_riddles_from_csv(self): # reads the riddle data from the csv file

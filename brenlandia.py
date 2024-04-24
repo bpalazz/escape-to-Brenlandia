@@ -20,9 +20,9 @@ class PlayRiddle(RiddleReader): # adds the riddle to the game and inherits from 
     def __init__(self, current_planet, file_path): # initializes the parameters of the class
         self.reader = RiddleReader(file_path)
         self.current_planet = current_planet
-        self.riddle = self.reader.read_riddles_from_csv() # inherited part of the function
+        self.riddle = self.reader.read_riddles_from_csv()
 
-    def handle_riddle(self, num):  # function that handles the riddles from the RiddleReader class
+    def handle_riddle(self, num):  # function that handles the riddles
 
         if self.current_planet.get_name() not in ['Brenlandia', 'Earth']:  # if the current planet is not the starting planet or last planet
             print('You must now answer this riddle so we can keep traveling!')
@@ -43,7 +43,7 @@ class PlayRiddle(RiddleReader): # adds the riddle to the game and inherits from 
                     print("Correct!\n")
                     num += 1  # move to the next riddle
                     break
-                elif attempts == 1:  # if they used their attempts, this will print
+                elif attempts == 1:  # if they used their attempts, this will print, inherited part of the function from RiddleReader
                     self.AlienInvasion()
                     exit(1)
                 else:  # if they get it wrong the first time, the hint will print out
