@@ -5,6 +5,7 @@ Assignment: RPG Project 002
 Course: CPSC 1050 
 Section: 001
 Description: This code reads the riddles.csv file and separates the parameters of the riddle into riddle, answer, and hint to the main function.
+GitHub Link: https://github.com/bpalazz/escape-to-Brenlandia
 '''
 
 import csv # imports the csv file

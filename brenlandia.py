@@ -5,6 +5,7 @@ Assignment: RPG Project 002 - Escape to Brenlandia
 Course: CPSC 1050 
 Section: 001
 Description: This code takes user input to play a space exploration game that will bring humans to their new planet.
+GitHub Link: https://github.com/bpalazz/escape-to-Brenlandia
 '''
 
 import sys # allows us to access other modules functions

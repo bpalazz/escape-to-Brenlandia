@@ -5,6 +5,7 @@ Assignment: RPG Project 002
 Course: CPSC 1050 
 Section: 001
 Description: The code below creates the planets with their descriptions and next planet. Then the code creates a map of these planets and a message if the player types in an invalid planet.
+GitHub Link: https://github.com/bpalazz/escape-to-Brenlandia
 '''
 
 class ExitNotFoundError(Exception): # This class calls an error when the user inputted planet is not found in the map.

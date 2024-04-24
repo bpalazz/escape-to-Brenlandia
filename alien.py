@@ -5,6 +5,7 @@ Assignment: RPG Project 002
 Course: CPSC 1050 
 Section: 001
 Description: This code holds all the bodies of the aliens.
+GitHub Link: https://github.com/bpalazz/escape-to-Brenlandia
 '''
 
 def Aliens(kills): # function that holds the three bodies of the aliens used
